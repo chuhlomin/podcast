@@ -113,73 +113,73 @@ func (p *Podcast) AddAtomLink(href string) {
 // used and will invalidate the feed if deviated from the list.  That list is
 // as follows.
 //
-// Arts
-// * Design
-// * Fashion & Beauty
-// * Food
-// * Literature
-// * Performing Arts
-// * Visual Arts
-// Business
-// * Business News
-// * Careers
-// * Investing
-// * Management & Marketing
-// * Shopping
-// Comedy
-// Education
-// * Education Technology
-// * Higher Education
-// * K-12
-// * Language Courses
-// * Training
-// Games & Hobbies
-// * Automotive
-// * Aviation
-// * Hobbies
-// * Other Games
-// * Video Games
-// Government & Organizations
-// * Local
-// * National
-// * Non-Profit
-// * Regional
-// Health
-// * Alternative Health
-// * Fitness & Nutrition
-// * Self-Help
-// * Sexuality
-// Kids & Family
-// Music
-// News & Politics
-// Religion & Spirituality
-// * Buddhism
-// * Christianity
-// * Hinduism
-// * Islam
-// * Judaism
-// * Other
-// * Spirituality
-// Science & Medicine
-// * Medicine
-// * Natural Sciences
-// * Social Sciences
-// Society & Culture
-// * History
-// * Personal Journals
-// * Philosophy
-// * Places & Travel
-// Sports & Recreation
-// * Amateur
-// * College & High School
-// * Outdoor
-// * Professional
-// Technology
-// * Gadgets
-// * Podcasting
-// * Software How-To
-// * Tech News
-// TV & Film
+// * Arts
+//   * Design
+//   * Fashion & Beauty
+//   * Food
+//   * Literature
+//   * Performing Arts
+//   * Visual Arts
+// * Business
+//   * Business News
+//   * Careers
+//   * Investing
+//   * Management & Marketing
+//   * Shopping
+// * Comedy
+// * Education
+//   * Education Technology
+//   * Higher Education
+//   * K-12
+//   * Language Courses
+//   * Training
+// * Games & Hobbies
+//   * Automotive
+//   * Aviation
+//   * Hobbies
+//   * Other Games
+//   * Video Games
+// * Government & Organizations
+//   * Local
+//   * National
+//   * Non-Profit
+//   * Regional
+// * Health
+//   * Alternative Health
+//   * Fitness & Nutrition
+//   * Self-Help
+//   * Sexuality
+// * Kids & Family
+// * Music
+// * News & Politics
+// * Religion & Spirituality
+//   * Buddhism
+//   * Christianity
+//   * Hinduism
+//   * Islam
+//   * Judaism
+//   * Other
+//   * Spirituality
+// * Science & Medicine
+//   * Medicine
+//   * Natural Sciences
+//   * Social Sciences
+// * Society & Culture
+//   * History
+//   * Personal Journals
+//   * Philosophy
+//   * Places & Travel
+// * Sports & Recreation
+//   * Amateur
+//   * College & High School
+//   * Outdoor
+//   * Professional
+// * Technology
+//   * Gadgets
+//   * Podcasting
+//   * Software How-To
+//   * Tech News
+// * TV & Film
 func (p *Podcast) AddCategory(category string, subCategories []string) {
 	if len(category) == 0 {
 		return
@@ -364,7 +364,7 @@ func (p *Podcast) AddSubTitle(subTitle string) {
 // Limit: 4000 characters
 //
 // Note that this field is a CDATA encoded field which allows for rich text
-// such as html links: <a href="http://www.apple.com">Apple</a>.
+// such as html links: `<a href="http://www.apple.com">Apple</a>`.
 func (p *Podcast) AddSummary(summary string) {
 	count := utf8.RuneCountInString(summary)
 	if count == 0 {
